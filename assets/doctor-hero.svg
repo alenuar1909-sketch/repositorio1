@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-label="Retrato ilustrado de un médico con bata blanca">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4EEEE"/><stop offset="1" stop-color="#CFE0E0"/></linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E9EFEF"/></linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D9A87F"/><stop offset="1" stop-color="#C58F65"/></linearGradient>
+  </defs>
+  <rect width="640" height="760" fill="url(#bg)"/>
+  <rect x="40" y="70" width="170" height="520" fill="#fff" opacity=".35"/>
+  <rect x="230" y="70" width="2" height="520" fill="#fff" opacity=".5"/>
+  <circle cx="470" cy="190" r="150" fill="#fff" opacity=".28"/>
+  <!-- torso -->
+  <path d="M60 760 C60 600 150 540 260 520 L380 520 C490 540 580 600 580 760 Z" fill="url(#coat)"/>
+  <path d="M260 520 L320 640 L380 520 Z" fill="#17404A"/>
+  <path d="M250 515 L320 660 L300 520 Z" fill="#fff"/><path d="M390 515 L320 660 L340 520 Z" fill="#F3F6F6"/>
+  <path d="M300 540 L320 640 L340 540 Z" fill="#fff" opacity=".0"/>
+  <path d="M285 525 L320 600 L355 525 Z" fill="#2F7C86"/>
+  <!-- stethoscope -->
+  <path d="M232 540 C215 640 250 700 300 700 C350 700 372 650 360 600" fill="none" stroke="#2A3A40" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="360" cy="596" r="14" fill="#8FA3A8" stroke="#2A3A40" stroke-width="5"/>
+  <path d="M232 540 C228 520 236 508 246 504 M408 540 C412 520 404 508 394 504" fill="none" stroke="#2A3A40" stroke-width="7" stroke-linecap="round"/>
+  <!-- pocket line -->
+  <path d="M470 640 h70 v70 h-70z" fill="none" stroke="#C9D6D6" stroke-width="3"/>
+  <rect x="500" y="620" width="6" height="40" rx="3" fill="#17404A"/>
+  <!-- neck + head -->
+  <path d="M285 440 L285 535 C300 560 340 560 355 535 L355 440 Z" fill="#B97F57"/>
+  <ellipse cx="320" cy="340" rx="92" ry="112" fill="url(#skin)"/>
+  <ellipse cx="228" cy="352" rx="13" ry="24" fill="#C58F65"/><ellipse cx="412" cy="352" rx="13" ry="24" fill="#B98258"/>
+  <!-- hair -->
+  <path d="M226 330 C214 220 290 196 330 200 C398 204 428 260 414 332 C404 290 388 262 352 252 C300 262 250 262 226 330Z" fill="#2B2420"/>
+  <!-- beard -->
+  <path d="M232 360 C238 430 280 462 320 462 C360 462 402 430 408 360 C396 392 372 408 320 408 C268 408 244 392 232 360Z" fill="#3A302A" opacity=".92"/>
+  <path d="M290 418 C310 426 330 426 350 418" stroke="#C58F65" stroke-width="5" fill="none" stroke-linecap="round" opacity=".0"/>
+  <!-- face details -->
+  <path d="M276 322 q16 -9 32 0 M332 322 q16 -9 32 0" stroke="#2B2420" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="292" cy="338" rx="7" ry="5" fill="#2B2420"/><ellipse cx="348" cy="338" rx="7" ry="5" fill="#2B2420"/>
+  <path d="M320 345 q-8 30 4 38" stroke="#A8744F" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M296 404 q24 14 48 0" stroke="#F4E9E0" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- glasses -->
+  <rect x="266" y="318" width="52" height="40" rx="14" fill="none" stroke="#1F2A2E" stroke-width="4"/>
+  <rect x="322" y="318" width="52" height="40" rx="14" fill="none" stroke="#1F2A2E" stroke-width="4"/>
+  <path d="M318 336 h4" stroke="#1F2A2E" stroke-width="4"/>
+</svg>
