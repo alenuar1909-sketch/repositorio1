@@ -235,3 +235,54 @@ textarea{min-height:90px;resize:vertical}
 /* evita desbordes en móvil (correo largo) */
 .contact-grid>*,.hero-grid>*,.about-grid>*,.faq-grid>*{min-width:0}
 .info a,.info span{overflow-wrap:anywhere}
+
+/* ---------- Subpáginas de procedimientos ---------- */
+.page-hero{padding:clamp(28px,5vw,56px) 0 clamp(40px,6vw,72px);border-bottom:1px solid var(--line);background:linear-gradient(#FAF8F4,#F4F1EA 140%)}
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:.85rem;color:var(--muted);margin-bottom:36px}
+.crumbs a{text-decoration:none}.crumbs a:hover{color:var(--ink);text-decoration:underline}
+.icon.big{width:64px;height:64px;border-radius:16px;background:#fff;border:1px solid var(--line);margin-bottom:26px}
+.icon.big svg{width:30px;height:30px}
+.page-hero h1{font-size:clamp(2.4rem,5vw,3.6rem);margin-bottom:20px}
+.detail{padding:clamp(48px,7vw,88px) 0}
+.detail-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:clamp(32px,6vw,80px);align-items:start}
+.prose{max-width:720px}
+.prose h2{font-size:clamp(1.7rem,3vw,2.2rem);margin:52px 0 16px}
+.prose h2:first-child{margin-top:0}
+.prose p+p{margin-top:16px}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{position:relative;padding-left:34px}
+.checks li::before{content:"";position:absolute;left:0;top:.38em;width:18px;height:18px;border-radius:50%;background:var(--soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 8.500 2.500 2.500L12 5.500' fill='none' stroke='%2317505B' stroke-width='1.800' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;border:1px solid #CBD9D9}
+.flow{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.flow li{display:grid;grid-template-columns:44px 1fr;gap:18px;padding-bottom:28px;position:relative}
+.flow li:not(:last-child)::before{content:"";position:absolute;left:21px;top:44px;bottom:6px;width:1px;background:var(--line)}
+.dot{width:44px;height:44px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font:600 1.1rem var(--serif)}
+.flow h3{font-size:1.35rem;margin:6px 0 4px}
+.flow p{font-size:.98rem}
+.disclaimer{margin-top:44px;padding:18px 22px;border-radius:12px;background:#F4EFE4;border:1px solid #E7DCC5;font-size:.92rem;color:#5C4A2A}
+.mini-faq details:first-child{border-top:1px solid var(--line)}
+.mini-faq summary{font-size:1.2rem}
+.aside{position:sticky;top:104px}
+.aside-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);display:grid;gap:22px}
+.aside .doc{display:flex;gap:14px;align-items:center}
+.aside .doc img{width:56px;height:56px;border-radius:50%;object-fit:cover;background:#DCE8E8}
+.aside .doc b{display:block;font:600 1.15rem/1.2 var(--serif);color:var(--ink)}
+.aside .doc span{font-size:.85rem;color:var(--muted)}
+.aside dl{margin:0;display:grid;gap:14px}
+.aside dl div{padding-top:14px;border-top:1px solid var(--line)}
+.aside dt{font:600 .7rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.aside dd{margin:3px 0 0;color:var(--ink);font-weight:500;font-size:.95rem}
+.aside .btn{width:100%}
+.aside-note{font-size:.84rem;color:var(--muted);text-align:center;line-height:1.5}
+.related{padding:0 0 clamp(48px,7vw,88px)}
+.related h2{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:24px}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rel{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s,box-shadow .2s}
+.rel:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#D5DCDB}
+.rel .icon{margin:0;width:42px;height:42px;flex:none}.rel .icon svg{width:22px;height:22px}
+.rel b{font:600 1.15rem/1.2 var(--serif);flex:1}
+.rel .go{width:18px;height:18px;color:var(--brand)}
+@media (max-width:980px){
+  .detail-grid{grid-template-columns:minmax(0,1fr)}
+  .aside{position:static;order:-1}
+  .rel-grid{grid-template-columns:1fr}
+}
