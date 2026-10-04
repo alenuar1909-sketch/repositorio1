@@ -19,8 +19,9 @@
   // Reveal suave al hacer scroll
   var items=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.01,rootMargin:'0px 0px -4% 0px'});
     items.forEach(function(el){io.observe(el)});
+    setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},5000);
   }else{items.forEach(function(el){el.classList.add('in')})}
 
   // Enlace activo en la navegación
